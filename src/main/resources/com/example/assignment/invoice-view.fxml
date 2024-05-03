@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<Pane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.assignment.InvoiceController">
+    <VBox alignment="BASELINE_CENTER" prefHeight="720.0" prefWidth="1280.0">
+        <HBox alignment="CENTER" prefHeight="111.0" prefWidth="1280.0" spacing="200.0">
+            <Label alignment="CENTER" prefHeight="111.0" prefWidth="505.0" text="Peguin Instrument Store"
+                   textFill="#52ff00">
+                <font>
+                    <Font name="HP Simplified Bold" size="44.0"/>
+                </font>
+                <opaqueInsets>
+                    <Insets right="50.0"/>
+                </opaqueInsets>
+            </Label>
+            <Label alignment="CENTER" prefHeight="111.0" prefWidth="567.0" text="Invoice" textFill="RED">
+                <HBox.margin>
+                    <Insets/>
+                </HBox.margin>
+                <font>
+                    <Font name="HP Simplified Bold" size="44.0"/>
+                </font>
+            </Label>
+        </HBox>
+        <HBox alignment="CENTER" fillHeight="false" prefHeight="70.0" prefWidth="1280.0" spacing="20.0">
+            <children>
+                <Label alignment="CENTER_RIGHT" prefHeight="45.0" text="Item name:">
+                    <font>
+                        <Font name="HP Simplified" size="38.0"/>
+                    </font>
+                </Label>
+                <ComboBox fx:id="cbInstrument" prefHeight="60.0" prefWidth="327.0" promptText="Choose Item here"
+                          style="-fx-font-size: 25;"/>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" fillHeight="false" layoutX="10.0" layoutY="121.0" prefHeight="70.0" prefWidth="1280.0"
+              spacing="20.0">
+            <children>
+                <Label alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="177.0" text="Item price:">
+                    <font>
+                        <Font name="HP Simplified" size="38.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="txtPrice" disable="true" prefHeight="60.0" prefWidth="328.0"
+                           promptText="Item price will be shown here">
+                    <font>
+                        <Font size="23.0"/>
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" fillHeight="false" layoutX="10.0" layoutY="121.0" prefHeight="70.0" prefWidth="1280.0"
+              spacing="20.0">
+            <children>
+                <Label alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="177.0" text="Quantity:">
+                    <font>
+                        <Font name="HP Simplified" size="38.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="txtQuantity" prefHeight="60.0" prefWidth="328.0" promptText="Enter quantity here">
+                    <font>
+                        <Font size="26.0"/>
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" fillHeight="false" layoutX="10.0" layoutY="331.0" prefHeight="70.0" prefWidth="1280.0"
+              spacing="20.0">
+            <children>
+                <Label alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="177.0" text="Total:">
+                    <font>
+                        <Font name="HP Simplified" size="38.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="txtTotal" disable="true" prefHeight="60.0" prefWidth="328.0"
+                           promptText="Total will be shown here">
+                    <font>
+                        <Font size="26.0"/>
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" fillHeight="false" layoutX="10.0" layoutY="401.0" prefHeight="70.0" prefWidth="1280.0"
+              spacing="20.0">
+            <children>
+                <Label alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="177.0" text="Cash:">
+                    <font>
+                        <Font name="HP Simplified" size="38.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="txtCash" prefHeight="60.0" prefWidth="328.0" promptText="Enter amount of cash here">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" fillHeight="false" layoutX="10.0" layoutY="471.0" prefHeight="70.0" prefWidth="1280.0"
+              spacing="20.0">
+            <children>
+                <Label alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="177.0" text="Remain:">
+                    <font>
+                        <Font name="HP Simplified" size="38.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="txtRemain" disable="true" prefHeight="60.0" prefWidth="328.0"
+                           promptText="Remain will be shown here">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" fillHeight="false" layoutX="10.0" layoutY="541.0" prefHeight="70.0" prefWidth="1280.0"
+              spacing="40.0">
+            <children>
+                <Button fx:id="btnAdd" mnemonicParsing="false" onMouseClicked="#add" prefHeight="54.0" prefWidth="126.0"
+                        text="Add">
+                    <font>
+                        <Font name="HP Simplified" size="28.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="btnPay" mnemonicParsing="false" onMouseClicked="#pay" prefHeight="54.0" prefWidth="126.0"
+                        text="Pay">
+                    <font>
+                        <Font name="HP Simplified" size="28.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="btnReset" layoutX="670.0" layoutY="18.0" mnemonicParsing="false"
+                        onMouseClicked="#resetForm" prefHeight="54.0" prefWidth="126.0" text="Reset">
+                    <font>
+                        <Font name="HP Simplified" size="28.0"/>
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </VBox>
+</Pane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <TabPane prefHeight="720.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab style="-fx-font-size: 18;" text="Instrument Types">
+                <content>
+                    <fx:include source="instrumentType-view.fxml" />
+                </content>
+            </Tab>
+            <Tab style="-fx-font-size: 18;" text="Instruments">
+                <content>
+                    <fx:include source="instrument-view.fxml" />
+                </content>
+            </Tab>
+            <Tab style="-fx-font-size: 18;" text="Users">
+                <content>
+                    <fx:include source="user-view.fxml" />
+                </content>
+            </Tab>
+            <Tab style="-fx-font-size: 18;" text="Invoice">
+                <content>
+                    <fx:include source="invoice-view.fxml" />
+                </content>
+            </Tab>
+        </tabs>
+    </TabPane>
+</Pane>

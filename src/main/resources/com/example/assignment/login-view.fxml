@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<Pane fx:id="mainPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <children>
+        <VBox alignment="CENTER" onKeyPressed="#loginEnter" prefHeight="720.0" prefWidth="1280.0" spacing="25.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="25.0" spacing="25.0">
+                    <children>
+                        <Label prefHeight="35.0" prefWidth="153.0" text="Username">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="txtUsername" prefHeight="25.0" prefWidth="250.0"
+                                   style="-fx-border-color: #00704A;">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="25.0" spacing="25.0">
+                    <children>
+                        <Label prefHeight="35.0" prefWidth="152.0" text="Password">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <PasswordField fx:id="txtPassword" prefHeight="25.0" prefWidth="250.0"
+                                       style="-fx-border-color: #00704A;">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </PasswordField>
+                    </children>
+                </HBox>
+                <Button fx:id="btnLogin" mnemonicParsing="false" onMouseClicked="#login" prefHeight="25.0"
+                        prefWidth="100.0" text="Login">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="111.0" prefWidth="505.0"
+               text="Peguin Instrument Store" textFill="#52ff00">
+            <font>
+                <Font name="HP Simplified Bold" size="44.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets right="50.0"/>
+            </opaqueInsets>
+        </Label>
+    </children>
+</Pane>
